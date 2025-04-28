@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ToastHandler from "@/app/components/ToastHandler";
 import AddPostButton from "./components/AddPostButton";
 import FunctionButtons from "./components/FunctionButtons";
@@ -36,7 +37,9 @@ async function Posts() {
           </li>
         ))}
       </ul>
-      <ToastHandler />
+      <Suspense>
+        <ToastHandler />
+      </Suspense>
     </>
   );
 }
