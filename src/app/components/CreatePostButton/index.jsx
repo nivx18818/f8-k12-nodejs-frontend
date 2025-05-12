@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-function AddPostButton() {
+function CreatePostButton() {
   const router = useRouter();
 
   return (
@@ -10,4 +10,4 @@ function AddPostButton() {
   );
 }
 
-export default AddPostButton;
+export default CreatePostButton;

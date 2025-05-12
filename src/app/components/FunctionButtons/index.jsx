@@ -8,7 +8,7 @@ function FunctionButtons({ id }) {
 
   return (
     <div>
-      <button onClick={() => router.push(`/edit-post/${id}`)}>Sửa</button>
+      <button onClick={() => router.push(`/edit-post/${id}`)}>Sửa bài viết</button>
       <button
         onClick={() => {
           if (window.confirm("Xoá bài viết này?")) {
@@ -16,7 +16,7 @@ function FunctionButtons({ id }) {
           }
         }}
       >
-        Xoá
+        Xoá bài viết
       </button>
     </div>
   );
